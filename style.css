@@ -1,0 +1,61 @@
+* {
+    background-color: rgb(161, 114, 106);
+}
+html {
+    height: 100%;
+}
+body {
+    color: #000;
+    font-family:  monospace;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.emoji {
+    font-size: 2rem;
+    border: 3px solid #3f3f3f;
+    padding: 7px;
+    border-radius: 50%;
+    background: #4a1cf0;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5em;
+    color:rgb(252, 5, 157);
+    margin-bottom: 1.5em;
+}
+input {
+    font: inherit;
+    outline: 0;
+    border: solid 4px;
+    border-radius: 1em;
+    font-size: 1.5rem;
+    padding: 0.5em 4em 0.5em 2em;
+}
+.container {
+    position: relative;
+}
+
+.textfeild:valid {
+    border-color: green;
+}
+.textfeild:valid + .emoji::after {
+    content: '😀';
+}
+.textfeild:invalid {
+    border-color: red;
+}
+.textfeild:invalid + .emoji::after {
+    content: '😡';
+}
+
+
+/*  */
